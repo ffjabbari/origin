@@ -7,7 +7,7 @@
 
 <div class="entry foreground-color">
      <form>
-         <input type="text" name="commands" size="60"/>
+         <input type="text" id="fred" name="commands" size="60"/>
      </form>
  </div>
 
@@ -18,7 +18,8 @@
 <script>
 function myFunction() {
     var str1 = "The rain in SPAIN stays mainly in the plain"; 
-    var str = document.forms[0].elements[0].value;
+    var str2 = document.forms[0].elements[0].value;
+    var str = document.getElementById("fred").value;
     //alert(str);
     var res = str.match(/ain/g);
     document.getElementById("demo").innerHTML = res;
