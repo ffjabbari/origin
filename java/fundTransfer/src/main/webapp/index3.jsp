@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<H>Hi Tom:</H>
+<H1>Hi Tom</H1>
 <p>Click the button to perfom a global (/g) search for the letters "ain" (/ain) in a string , and display the matches.</p>
 <p>The rain in SPAIN stays mainly in the plain</p>
 
@@ -12,7 +12,7 @@
  </div>
 
 <button onclick="myFunction()">Try it</button>
- ß
+ 
 <p id="demo"></p>
 
 <script>
