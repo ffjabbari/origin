@@ -123,16 +123,6 @@ public abstract class AbstractEntity implements Entity {
 
 	}
 
-	public void remove(Entity entity) {
-
-	}
-
-	public Entity getChild(int i) {
-
-		return null;
-
-	}
-
 	public List<Entity> getLstChildren() {
 		return null;
 	}

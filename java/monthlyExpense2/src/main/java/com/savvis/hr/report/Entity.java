@@ -56,17 +56,6 @@ public interface Entity {
 	public void add(Entity currNode, Entity newNode);
 
 	/**
-	 * @param entity
-	 */
-	public void remove(Entity entity);
-
-	/**
-	 * @param i
-	 * @return
-	 */
-	public Entity getChild(int i);
-
-	/**
 	 * @return
 	 */
 	public String getType();
