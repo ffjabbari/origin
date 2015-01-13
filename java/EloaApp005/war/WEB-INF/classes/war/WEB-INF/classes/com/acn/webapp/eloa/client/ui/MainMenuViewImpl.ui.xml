@@ -1,0 +1,9 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+  <g:FlowPanel>
+    <g:Button ui:field="defaultButton" text="Home"/>
+    <g:Button ui:field="mailButton" text="Products"/>
+    <g:Button ui:field="contactButton" text="Customers"/>
+    <g:Button ui:field="settingsButton" text="Other"/>
+  </g:FlowPanel>
+</ui:UiBinder>

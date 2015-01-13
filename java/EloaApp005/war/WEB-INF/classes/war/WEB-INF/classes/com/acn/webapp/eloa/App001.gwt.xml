@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="eloaApp001">
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <inherits name="com.google.gwt.activity.Activity"/>
+  <inherits name="com.google.gwt.place.Place"/>
+  <inherits name="com.google.gwt.cell.Cell"/>
+  <inherits name="com.google.gwt.editor.Editor"/>
+  <inherits name="com.google.gwt.inject.Inject"/>
+
+  <inherits name="com.google.gwt.logging.Logging"/>
+  <set-property name="gwt.logging.enabled" value="TRUE"/>
+  <set-property name="gwt.logging.logLevel" value="FINE"/>
+  <set-property name="gwt.logging.consoleHandler" value="DISABLED"/>
+  <set-property name="gwt.logging.developmentModeHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.firebugHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.hasWidgetsHandler" value="DISABLED"/>
+  <set-property name="gwt.logging.popupHandler" value="DISABLED"/>
+  <set-property name="gwt.logging.systemHandler" value="ENABLED"/>
+  <set-property name="gwt.logging.simpleRemoteHandler" value="DISABLED"/>
+
+  <inherits name="com.google.web.bindery.autobean.AutoBean" />
+  
+  <entry-point class='com.acn.webapp.eloa.client.EntrypointLayout001'/>
+  
+<source path='client'/>
+  <source path='shared'/>
+  
+  <replace-with class="com.acn.webapp.eloa.client.ClientFactoryImpl">
+    <when-type-is class="com.acn.webapp.eloa.client.ClientFactory"/>
+  </replace-with>
+  <replace-with class="com.acn.webapp.eloa.client.ServiceLocatorImpl">
+    <when-type-is class="com.acn.webapp.eloa.client.ServiceLocator"/>
+  </replace-with>
+  <replace-with class="com.acn.webapp.eloa.client.ObjectFactoryImpl">
+    <when-type-is class="com.acn.webapp.eloa.client.ObjectFactory"/>
+  </replace-with>
+</module>

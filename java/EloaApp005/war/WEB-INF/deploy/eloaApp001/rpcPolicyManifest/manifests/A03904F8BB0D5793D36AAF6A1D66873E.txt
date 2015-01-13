@@ -1,0 +1,2 @@
+serviceClass: com.acn.webapp.eloa.client.UserService
+path: 69E8A0C67CA26BC3EEEDD5F0CAB79A02.gwt.rpc

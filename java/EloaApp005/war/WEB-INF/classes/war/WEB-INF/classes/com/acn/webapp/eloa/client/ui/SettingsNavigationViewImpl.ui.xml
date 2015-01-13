@@ -1,0 +1,13 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+  <g:StackLayoutPanel height="100%" unit="EM">
+    <g:stack>
+      <g:header size="3">Product Settings</g:header>
+      <g:Label ui:field="mailPreferences">Product preferences</g:Label>
+    </g:stack>
+    <g:stack>
+      <g:header size="3">Customer Settings</g:header>
+      <g:Label ui:field="contactsPreferences">Customer preferences</g:Label>
+    </g:stack>
+  </g:StackLayoutPanel>
+</ui:UiBinder>
