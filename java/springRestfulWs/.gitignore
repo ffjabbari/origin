@@ -1,0 +1,8 @@
+# java compiled classes
+*.class
+# maven 
+target
+# eclipse directories
+.settings
+.classpath
+.project
