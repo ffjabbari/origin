@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.buildria.camel.example.basis.property.PropertySpringClassPathTest
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 sec - in com.buildria.camel.example.basis.property.PropertySpringClassPathTest

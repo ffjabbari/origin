@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.buildria.camel.example.eip.splitter.SplitterStopOnExceptionTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.297 sec - in com.buildria.camel.example.eip.splitter.SplitterStopOnExceptionTest
