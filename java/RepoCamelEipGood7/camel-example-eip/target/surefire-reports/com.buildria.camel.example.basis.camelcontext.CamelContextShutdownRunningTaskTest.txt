@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.buildria.camel.example.basis.camelcontext.CamelContextShutdownRunningTaskTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.191 sec - in com.buildria.camel.example.basis.camelcontext.CamelContextShutdownRunningTaskTest

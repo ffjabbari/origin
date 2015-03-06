@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:camel="http://camel.apache.org/schema/spring"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring-2.10.0.xsd">
+
+  <camel:camelContext/>
+
+  <bean id="streamComponent" class="org.apache.camel.component.stream.StreamComponent"/>
+  <bean id="jms" class="org.apache.activemq.camel.component.ActiveMQComponent">
+    <property name="autoStartup" value="true"/>
+    <property name="connectionFactory" ref="jmsConnectionFactory"/>
+  </bean>
+  <bean id="jmsConfig" class="org.apache.camel.component.jms.JmsConfiguration">
+    <property name="connectionFactory" ref="jmsConnectionFactory"/>
+    <property name="transacted" value="false"/>
+    <property name="concurrentConsumers" value="10"/>
+  </bean>
+</beans>

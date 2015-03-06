@@ -1,0 +1,4 @@
+org/jboss/poc/camelclaimcheck/producer/test/ProducerUnitTestSupport.class
+org/jboss/poc/camelclaimcheck/producer/test/MessageStoreMockImpl.class
+org/jboss/poc/camelclaimcheck/producer/test/MessageHandlerUnitTest.class
+org/jboss/poc/camelclaimcheck/producer/test/FilePollerUnitTest.class

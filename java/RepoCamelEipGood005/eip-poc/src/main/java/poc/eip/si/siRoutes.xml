@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:si="http://www.springframework.org/schema/integration"
+       xmlns:siFile="http://www.springframework.org/schema/integration/file"
+       xmlns:siJms="http://www.springframework.org/schema/integration/jms"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/integration http://www.springframework.org/schema/integration/spring-integration-2.1.xsd
+       http://www.springframework.org/schema/integration/file http://www.springframework.org/schema/integration/file/spring-integration-file-2.1.xsd
+       http://www.springframework.org/schema/integration/jms http://www.springframework.org/schema/integration/jms/spring-integration-jms-2.1.xsd">
+  <siJms:message-driven-channel-adapter id="jmsInboundAdapter" connection-factory="jmsConnectionFactory"
+                                        destination-name="*" channel="serviceActivator"/>
+  <si:service-activator input-channel="serviceActivator" output-channel="transform">
+    <bean class="poc.eip.si.SiServiceActivator"/>
+  </si:service-activator>
+  <si:transformer input-channel="transform" output-channel="toFile"
+                  expression="payload + ' And I am Spring Integration, I am too young to be as cool as Apache Camel, but I want your attention!'"/>
+  <siFile:outbound-channel-adapter id="toFile" directory="siTarget" auto-create-directory="true"
+                                   filename-generator-expression="T(java.lang.System).currentTimeMillis()+'.txt'"/>
+</beans>
