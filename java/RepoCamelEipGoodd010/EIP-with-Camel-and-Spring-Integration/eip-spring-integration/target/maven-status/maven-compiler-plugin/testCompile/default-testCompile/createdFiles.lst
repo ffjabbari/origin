@@ -1,0 +1,7 @@
+eip/spring/integration/DeliveryNoteCsvImportDemo.class
+eip/spring/integration/LooseCoupledStockTest.class
+eip/spring/integration/OrderFlatFileItemReaderDelegateTest.class
+eip/spring/integration/ActiveMqEnricherRoutingTest.class
+eip/spring/integration/DeliveryNoteCsvImportTest.class
+eip/spring/integration/OrderCsvImportDemo.class
+eip/spring/integration/OrderCsvImportTest.class

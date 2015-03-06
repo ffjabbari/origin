@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="2698" started-at="2015-03-06T16:52:33Z" finished-at="2015-03-06T16:52:36Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2698" started-at="2015-03-06T16:52:33Z" finished-at="2015-03-06T16:52:36Z">
+      <class name="eip.common.services.BacklogServiceSchedulerTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2015-03-06T09:52:33Z" finished-at="2015-03-06T09:52:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="439" started-at="2015-03-06T09:52:33Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:52:34Z" finished-at="2015-03-06T09:52:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.common.services.BacklogServiceSchedulerTest.testBacklogScheduler() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testBacklogScheduler()[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="testBacklogScheduler" duration-ms="2005" started-at="2015-03-06T09:52:34Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBacklogScheduler -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="2" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.common.services.BacklogServiceSchedulerTest.testBacklogScheduler() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.common.services.BacklogServiceSchedulerTest@67852f24]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.common.services.BacklogServiceSchedulerTest -->
+      <class name="eip.common.services.BacklogServiceTest">
+        <test-method status="PASS" signature="beforeMathod()[pri:0, instance:eip.common.services.BacklogServiceTest@1d61b2f8]" name="beforeMathod" is-config="true" duration-ms="170" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMathod -->
+        <test-method status="PASS" signature="getBacklogItems()[pri:0, instance:eip.common.services.BacklogServiceTest@1d61b2f8]" name="getBacklogItems" duration-ms="17" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getBacklogItems -->
+        <test-method status="PASS" signature="beforeMathod()[pri:0, instance:eip.common.services.BacklogServiceTest@1d61b2f8]" name="beforeMathod" is-config="true" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMathod -->
+        <test-method status="PASS" signature="saveBacklogItems()[pri:0, instance:eip.common.services.BacklogServiceTest@1d61b2f8]" name="saveBacklogItems" duration-ms="10" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- saveBacklogItems -->
+      </class> <!-- eip.common.services.BacklogServiceTest -->
+      <class name="eip.common.services.OrderServiceTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.common.services.OrderServiceTest@32a19277]" name="beforeMethod" is-config="true" duration-ms="12" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="handleOrder(eip.common.entities.Order, eip.common.entities.Item, eip.common.entities.Item, eip.common.entities.StockItem, eip.common.entities.StockItem)[pri:0, instance:eip.common.services.OrderServiceTest@32a19277]" name="handleOrder" duration-ms="3" started-at="2015-03-06T09:52:36Z" data-provider="createOrder" finished-at="2015-03-06T09:52:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eip.common.entities.Order@462c516a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[itemType:DRIVE, name:Shimano LX,number:1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[itemType:FRAME, name:Black 60 cm,number:5678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[itemType:DRIVE, name:Shimano LX,number:1234, quantity:1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[itemType:FRAME, name:Black 60 cm,number:5678, quantity:0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleOrder -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.common.services.OrderServiceTest@32a19277]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="handleOrderUnknownItem(eip.common.entities.Order, eip.common.entities.Item, eip.common.entities.Item, eip.common.entities.StockItem, eip.common.entities.StockItem)[pri:0, instance:eip.common.services.OrderServiceTest@32a19277]" name="handleOrderUnknownItem" duration-ms="0" started-at="2015-03-06T09:52:36Z" data-provider="createOrder" finished-at="2015-03-06T09:52:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[eip.common.entities.Order@10d60e4c]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[itemType:DRIVE, name:Shimano LX,number:1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[itemType:FRAME, name:Black 60 cm,number:5678]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[itemType:DRIVE, name:Shimano LX,number:1234, quantity:1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[itemType:FRAME, name:Black 60 cm,number:5678, quantity:0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleOrderUnknownItem -->
+      </class> <!-- eip.common.services.OrderServiceTest -->
+      <class name="eip.common.services.StockServiceTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="setUp" is-config="true" duration-ms="6" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addOneItem()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="addOneItem" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOneItem -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="setUp" is-config="true" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="checkoutStockItem()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="checkoutStockItem" duration-ms="2" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutStockItem -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="setUp" is-config="true" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getItemsOnStock()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="getItemsOnStock" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getItemsOnStock -->
+        <test-method status="PASS" signature="getStockItem()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="getStockItem" duration-ms="1" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStockItem -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:eip.common.services.StockServiceTest@3e374059]" name="setUp" is-config="true" duration-ms="0" started-at="2015-03-06T09:52:36Z" finished-at="2015-03-06T09:52:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- eip.common.services.StockServiceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

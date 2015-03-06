@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="6926" started-at="2015-03-06T16:54:50Z" finished-at="2015-03-06T16:54:57Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="6926" started-at="2015-03-06T16:54:50Z" finished-at="2015-03-06T16:54:57Z">
+      <class name="eip.camel.ActiveMqEnricherRoutingTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2015-03-06T09:54:50Z" finished-at="2015-03-06T09:54:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="2435" started-at="2015-03-06T09:54:50Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="sendMail" duration-ms="67" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.ActiveMqEnricherRoutingTest.sendMail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.ActiveMqEnricherRoutingTest.sendMail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="sendSms()[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="sendSms" duration-ms="8" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendSms -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.ActiveMqEnricherRoutingTest.sendSms() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.ActiveMqEnricherRoutingTest.sendSms() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.camel.ActiveMqEnricherRoutingTest@502b1988]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.camel.ActiveMqEnricherRoutingTest -->
+      <class name="eip.camel.DeliveryNoteCsvImportTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="606" started-at="2015-03-06T09:54:53Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.DeliveryNoteCsvImportTest.check() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="check()[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="check" duration-ms="890" started-at="2015-03-06T09:54:53Z" finished-at="2015-03-06T09:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:54Z" finished-at="2015-03-06T09:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.DeliveryNoteCsvImportTest@458debd3]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:54Z" finished-at="2015-03-06T09:54:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.DeliveryNoteCsvImportTest.check() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- eip.camel.DeliveryNoteCsvImportTest -->
+      <class name="eip.camel.LooseCoupledStockTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="1" started-at="2015-03-06T09:54:54Z" finished-at="2015-03-06T09:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="251" started-at="2015-03-06T09:54:54Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="getStockItem()[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="getStockItem" duration-ms="2" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStockItem -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.LooseCoupledStockTest.getStockItem()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.LooseCoupledStockTest@1b7347df]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.LooseCoupledStockTest.getStockItem()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- eip.camel.LooseCoupledStockTest -->
+      <class name="eip.camel.OrderCsvImportTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="335" started-at="2015-03-06T09:54:55Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="check()[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="check" duration-ms="1003" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:55Z" finished-at="2015-03-06T09:54:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.OrderCsvImportTest.check() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:54:56Z" finished-at="2015-03-06T09:54:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.OrderCsvImportTest.check() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.camel.OrderCsvImportTest@6bedd91b]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:56Z" finished-at="2015-03-06T09:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.camel.OrderCsvImportTest -->
+      <class name="eip.camel.WebServiceTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:56Z" finished-at="2015-03-06T09:54:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1048" started-at="2015-03-06T09:54:56Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:57Z" finished-at="2015-03-06T09:54:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.WebServiceTest.testWebserviceCall() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="testWebserviceCall()[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="testWebserviceCall" duration-ms="258" started-at="2015-03-06T09:54:57Z" finished-at="2015-03-06T09:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWebserviceCall -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:54:57Z" finished-at="2015-03-06T09:54:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.camel.WebServiceTest.testWebserviceCall() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.camel.WebServiceTest@6e556e82]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:54:57Z" finished-at="2015-03-06T09:54:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.camel.WebServiceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

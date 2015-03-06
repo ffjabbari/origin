@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="4068" started-at="2015-03-06T16:53:10Z" finished-at="2015-03-06T16:53:14Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="4068" started-at="2015-03-06T16:53:10Z" finished-at="2015-03-06T16:53:14Z">
+      <class name="eip.spring.integration.OrderCsvImportTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="141" started-at="2015-03-06T09:53:13Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.OrderCsvImportTest.check() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="check()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="check" duration-ms="997" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:14Z" finished-at="2015-03-06T09:53:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.OrderCsvImportTest.check() throws java.lang.InterruptedException,java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:14Z" finished-at="2015-03-06T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:eip.spring.integration.OrderCsvImportTest@71345af1]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:14Z" finished-at="2015-03-06T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- eip.spring.integration.OrderCsvImportTest -->
+      <class name="eip.spring.integration.OrderFlatFileItemReaderDelegateTest">
+        <test-method status="PASS" signature="beforMethod()[pri:0, instance:eip.spring.integration.OrderFlatFileItemReaderDelegateTest@115ed9ec]" name="beforMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:14Z" finished-at="2015-03-06T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforMethod -->
+        <test-method status="PASS" signature="read()[pri:0, instance:eip.spring.integration.OrderFlatFileItemReaderDelegateTest@115ed9ec]" name="read" duration-ms="1" started-at="2015-03-06T09:53:14Z" finished-at="2015-03-06T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- read -->
+      </class> <!-- eip.spring.integration.OrderFlatFileItemReaderDelegateTest -->
+      <class name="eip.spring.integration.DeliveryNoteCsvImportTest">
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="281" started-at="2015-03-06T09:53:11Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:12Z" finished-at="2015-03-06T09:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:12Z" finished-at="2015-03-06T09:53:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.DeliveryNoteCsvImportTest.check() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="check()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="check" duration-ms="1002" started-at="2015-03-06T09:53:12Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.DeliveryNoteCsvImportTest.check() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="afterMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.spring.integration.DeliveryNoteCsvImportTest@6a351ddc]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.spring.integration.DeliveryNoteCsvImportTest -->
+      <class name="eip.spring.integration.LooseCoupledStockTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="97" started-at="2015-03-06T09:53:13Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.LooseCoupledStockTest.getStockItem()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="getStockItem()[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="getStockItem" duration-ms="9" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getStockItem -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="springTestContextAfterTestClass" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.LooseCoupledStockTest@62b84cb8]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:13Z" finished-at="2015-03-06T09:53:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.LooseCoupledStockTest.getStockItem()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+      </class> <!-- eip.spring.integration.LooseCoupledStockTest -->
+      <class name="eip.spring.integration.ActiveMqEnricherRoutingTest">
+        <test-method status="PASS" signature="springTestContextBeforeTestClass()[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextBeforeTestClass" is-config="true" duration-ms="7" started-at="2015-03-06T09:53:10Z" finished-at="2015-03-06T09:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestClass -->
+        <test-method status="PASS" signature="springTestContextPrepareTestInstance()[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextPrepareTestInstance" is-config="true" duration-ms="1456" started-at="2015-03-06T09:53:10Z" depends-on-methods="org.springframework.test.context.testng.AbstractTestNGSpringContextTests.springTestContextBeforeTestClass" finished-at="2015-03-06T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextPrepareTestInstance -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.ActiveMqEnricherRoutingTest.sendMail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="sendMail()[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="sendMail" duration-ms="55" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendMail -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.ActiveMqEnricherRoutingTest.sendMail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextBeforeTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextBeforeTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.ActiveMqEnricherRoutingTest.sendSms() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextBeforeTestMethod -->
+        <test-method status="PASS" signature="sendSms()[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="sendSms" duration-ms="3" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendSms -->
+        <test-method status="PASS" signature="springTestContextAfterTestMethod(java.lang.reflect.Method)[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextAfterTestMethod" is-config="true" duration-ms="0" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void eip.spring.integration.ActiveMqEnricherRoutingTest.sendSms() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestMethod -->
+        <test-method status="PASS" signature="springTestContextAfterTestClass()[pri:0, instance:eip.spring.integration.ActiveMqEnricherRoutingTest@2b91d887]" name="springTestContextAfterTestClass" is-config="true" duration-ms="1" started-at="2015-03-06T09:53:11Z" finished-at="2015-03-06T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- springTestContextAfterTestClass -->
+      </class> <!-- eip.spring.integration.ActiveMqEnricherRoutingTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

@@ -1,0 +1,4 @@
+eip/camel/CsvToStockItemProcessor.class
+eip/camel/NotificationRouter.class
+eip/camel/NotificationEnricher.class
+eip/camel/CsvToOrderProcessor.class

@@ -1,0 +1,8 @@
+eip/camel/DeliveryNoteCsvImportDemo.class
+eip/camel/WebServiceTest.class
+eip/camel/OrderCsvImportTest.class
+eip/camel/WebServiceTestBean.class
+eip/camel/DeliveryNoteCsvImportTest.class
+eip/camel/OrderCsvImportDemo.class
+eip/camel/ActiveMqEnricherRoutingTest.class
+eip/camel/LooseCoupledStockTest.class

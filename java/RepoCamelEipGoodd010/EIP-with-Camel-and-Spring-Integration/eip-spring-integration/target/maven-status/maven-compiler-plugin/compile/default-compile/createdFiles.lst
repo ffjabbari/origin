@@ -1,0 +1,5 @@
+eip/spring/integration/NotificationTransformer.class
+eip/spring/integration/OrderCsvImport.class
+eip/spring/integration/OrderFlatFileItemReaderDelegate.class
+eip/spring/integration/DeliveryNoteCsvImport.class
+eip/spring/integration/StockItemFieldSetMapper.class

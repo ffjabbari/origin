@@ -1,0 +1,7 @@
+parts/eip/package-info.class
+parts/eip/ItemType.class
+parts/eip/OrderRequest.class
+parts/eip/OrderType.class
+parts/eip/ObjectFactory.class
+eip/webservice/PartsEndpoint.class
+parts/eip/OrderResponse.class
