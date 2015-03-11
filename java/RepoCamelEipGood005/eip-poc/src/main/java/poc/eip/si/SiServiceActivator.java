@@ -8,6 +8,8 @@ import org.springframework.integration.Message;
 public class SiServiceActivator {
     public Message process(Message message) {
         System.out.println("SI saying: " + message.getHeaders().keySet());
+        System.out.println("SI saying: " + message.getPayload().toString() + "too...");
+        
         return message;
     }
 }

@@ -3,6 +3,7 @@ package se.supportix.camelreboot;
 import javax.xml.bind.JAXBContext;
 
 import org.apache.camel.CamelContext;
+import org.apache.camel.LoggingLevel;
 import org.apache.camel.ProducerTemplate;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.converter.jaxb.JaxbDataFormat;
@@ -34,8 +35,10 @@ public class App
 			
 			@Override
 			public void configure() throws Exception {
-				from("file:inbox?delay=2000").unmarshal(jaxb).beanRef("fixerBean");	
-				
+				System.out.println("AAAAAAA@FRED#");
+				from("file:inbox").log(LoggingLevel.DEBUG, "Processing derffred file ${body}").unmarshal(jaxb).beanRef("fixerBean");	
+				//from("file:inbox?delay=2000").log(LoggingLevel.DEBUG, "Processing derffred file ${file:name}").unmarshal(jaxb).beanRef("fixerBean");	
+				System.out.println("BBBBBBBB@FRED#");
 				from("direct:bean").marshal(jaxb).to("file:outbox");
 				
 			}

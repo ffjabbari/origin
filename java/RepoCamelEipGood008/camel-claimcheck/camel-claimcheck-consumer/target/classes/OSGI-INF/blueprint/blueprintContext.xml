@@ -43,17 +43,15 @@
  
   <reference id="messageStore" interface="org.jboss.poc.camel.store.MessageStore"/>
  
-  <camelContext id="camel-claimcheck-consumer" trace="false" xmlns="http://camel.apache.org/schema/blueprint">
-
-    <route id="jmsConsumerRoute">
-      <from uri="jms:queue:{{jms.consumer.queueName}}?disableReplyTo=true"/>
-      <log message="Consumed a JMS message: ${headers[JMSMessageID]}"/>
-      <log message="Claiming message..."/>
-      <bean ref="messageStore" method="claim(${body})"/>
-      <log message="Producing file..."/>
-      <to uri="file://{{file.producer.path}}"/>
-    </route>
-
-  </camelContext>
+  <camelContext trace="false" id="camel-claimcheck-consumer" xmlns="http://camel.apache.org/schema/blueprint">
+  <route id="jmsConsumerRoute">
+    <from uri="jms:queue:{{jms.consumer.queueName}}?disableReplyTo=true"/>
+    <log message="Consumed a JMS message @FRED@: ${headers[JMSMessageID]}"/>
+    <log message="Claiming message..."/>
+    <bean ref="messageStore" method="claim(${body})"/>
+    <log message="Producing file..."/>
+    <to uri="file://{{file.producer.path}}"/>
+  </route>
+</camelContext>
 
 </blueprint>

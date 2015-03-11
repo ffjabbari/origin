@@ -10,7 +10,7 @@ import poc.eip.camel.DslRoute;
 public class Main {
     public static void main(String[] args) throws Exception {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("/poc/eip/appContext.xml",
-                "/poc/eip/camel/camelContext.xml", "/poc/eip/si/siRoutes.xml");
+                "/poc/eip/camel/camelContefxt.xml", "/poc/eip/si/siRoutes.xml");
         CamelContext camelContext = context.getBean(CamelContext.class);
         camelContext.addRoutes(new DslRoute());
     }

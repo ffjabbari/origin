@@ -37,55 +37,49 @@
  
   <service ref="messageStore" interface="org.jboss.poc.camel.store.MessageStore"/>
  
-  <camelContext id="camel-claimcheck-store-impl" trace="false" xmlns="http://camel.apache.org/schema/blueprint">
-
-    <proxy id="messageStore" serviceInterface="org.jboss.poc.camel.store.MessageStore" serviceUrl="direct-vm:messageStore"/>
-    
-    <consumerTemplate id="consumer"/>
-    
-    <route id="messageStoreRoute">
-      <from uri="direct-vm:messageStore"/>
-      <choice>
-        <when>
-          <simple>${body.method.name} == 'store'</simple>
-          <to uri="direct:storeSftp"/>
-        </when>
-        <when>
-          <simple>${body.method.name} == 'claim'</simple>
-          <to uri="direct:claimSftp"/>
-        </when>
-      </choice>
-    </route>
-    
-    <route id="sftpStoreRoute">
-      <from uri="direct:storeSftp"/>
-      <log message="Storing message: ${id}"/>
-      <setBody>
-        <simple>${body.args[0]}</simple>
-      </setBody>
-      <convertBodyTo type="java.lang.byte[]"/>
-      <to uri="sftp://{{store.sftp.username}}@{{store.sftp.host}}:{{store.sftp.port}}/{{store.sftp.path}}?password=RAW({{store.sftp.password}})&amp;maximumReconnectAttempts=0&amp;reconnectDelay=5000&amp;stepwise=true&amp;separator=UNIX&amp;throwExceptionOnConnectFailed=true&amp;preferredAuthentications=password"/>
-      <setBody>
-        <simple>${id}</simple>
-      </setBody>
-    </route>
-    
-    <route id="sftpClaimRoute">
-      <from uri="direct:claimSftp"/>
-      <setBody>
-        <simple>${body.args[0]}</simple>
-      </setBody>
-      <setHeader headerName="CamelFileName">
-        <simple>${body}</simple>
-      </setHeader>
-      <setHeader headerName="MessageStoreURI">
-        <simple>sftp://${properties:store.sftp.username}@${properties:store.sftp.host}:${properties:store.sftp.port}/${properties:store.sftp.path}?password=RAW(${properties:store.sftp.password})&amp;maximumReconnectAttempts=0&amp;reconnectDelay=5000&amp;stepwise=false&amp;separator=UNIX&amp;throwExceptionOnConnectFailed=true&amp;delete=true&amp;maxMessagesPerPoll=1&amp;preferredAuthentications=password&amp;disconnect=true&amp;fileName=${body}</simple>
-      </setHeader>
-      <log message="Claiming message: ${body}"/>
-      <enrich uri="bean:consumer?method=receiveBody(${headers[MessageStoreURI]})"/>
-      <convertBodyTo type="java.lang.byte[]"/>
-    </route>
-
-  </camelContext>
+  <camelContext trace="false" id="camel-claimcheck-store-impl" xmlns="http://camel.apache.org/schema/blueprint">
+  <proxy serviceUrl="direct-vm:messageStore" id="messageStore"/>
+  <consumerTemplate id="consumer"/>
+  <route id="messageStoreRoute">
+    <from uri="direct-vm:messageStore"/>
+    <choice>
+      <when>
+        <simple>${body.method.name} == 'store'</simple>
+        <to uri="direct:storeSftp"/>
+      </when>
+      <when>
+        <simple>${body.method.name} == 'claim'</simple>
+        <to uri="direct:claimSftp"/>
+      </when>
+    </choice>
+  </route>
+  <route id="sftpStoreRoute">
+    <from uri="direct:storeSftp"/>
+    <log message="Storing message: ${id}"/>
+    <setBody>
+      <simple>${body.args[0]}</simple>
+    </setBody>
+    <convertBodyTo type="java.lang.byte[]"/>
+    <to uri="sftp://{{store.sftp.username}}@{{store.sftp.host}}:{{store.sftp.port}}/{{store.sftp.path}}?password=RAW({{store.sftp.password}})&amp;maximumReconnectAttempts=0&amp;reconnectDelay=5000&amp;stepwise=true&amp;separator=UNIX&amp;throwExceptionOnConnectFailed=true&amp;preferredAuthentications=password"/>
+    <setBody>
+      <simple>${id}</simple>
+    </setBody>
+  </route>
+  <route id="sftpClaimRoute">
+    <from uri="direct:claimSftp"/>
+    <setBody>
+      <simple>${body.args[0]}</simple>
+    </setBody>
+    <setHeader headerName="CamelFileName">
+      <simple>${body}</simple>
+    </setHeader>
+    <setHeader headerName="MessageStoreURI">
+      <simple>sftp://${properties:store.sftp.username}@${properties:store.sftp.host}:${properties:store.sftp.port}/${properties:store.sftp.path}?password=RAW(${properties:store.sftp.password})&amp;maximumReconnectAttempts=0&amp;reconnectDelay=5000&amp;stepwise=false&amp;separator=UNIX&amp;throwExceptionOnConnectFailed=true&amp;delete=true&amp;maxMessagesPerPoll=1&amp;preferredAuthentications=password&amp;disconnect=true&amp;fileName=${body}</simple>
+    </setHeader>
+    <log message="Claiming message: ${body}"/>
+    <enrich uri="bean:consumer?method=receiveBody(${headers[MessageStoreURI]})"/>
+    <convertBodyTo type="java.lang.byte[]"/>
+  </route>
+</camelContext>
 
 </blueprint>

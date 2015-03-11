@@ -27,13 +27,15 @@ public class MessageStoreMockImpl implements MessageStore {
   
   @Override
   public String store(Object message) {
-    String id = UUID.randomUUID().toString();
+	System.out.println("@FRED@ STORE MESSAGE BEAN");    
+	String id = UUID.randomUUID().toString();
     mapStore.put(id, message);
     return id;
   }
 
   @Override
   public Object claim(String id) {
-    return mapStore.get(id);
+	  System.out.println("@FRED@ CLAIM MESSAGE BEAN");    
+	  return mapStore.get(id);
   }
 }

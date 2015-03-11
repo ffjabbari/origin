@@ -1,0 +1,1 @@
+fred, I am Apache Camel! And I am Spring Integration, I am too young to be as cool as Apache Camel, but I want your attention!

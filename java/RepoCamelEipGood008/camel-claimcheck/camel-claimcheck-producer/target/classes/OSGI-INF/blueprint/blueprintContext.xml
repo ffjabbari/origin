@@ -43,23 +43,20 @@
  
   <reference id="messageStore" interface="org.jboss.poc.camel.store.MessageStore"/>
  
-  <camelContext id="camel-claimcheck-producer" trace="true" xmlns="http://camel.apache.org/schema/blueprint">
-
-    <route id="fileConsumerRoute">
-      <from uri="file://{{file.consumer.path}}?moveFailed=.error"/>
-      <log message="Consumed a file: ${headers[CamelFileName]}"/>
-      <to uri="direct:handleMessage"/>
-    </route>
-
-    <route id="messageHandlerRoute">
-      <from uri="direct:handleMessage"/>
-      <log message="Storing message..."/>
-      <bean ref="messageStore" method="store(${body})"/>
-      <log message="Sending claim check..."/>
-      <removeHeaders pattern="*"/>
-      <to uri="jms:queue:{{jms.producer.queueName}}?disableReplyTo=true"/>
-    </route>
-
-  </camelContext>
+  <camelContext trace="true" id="camel-claimcheck-producer" xmlns="http://camel.apache.org/schema/blueprint">
+  <route id="fileConsumerRoute">
+    <from uri="file://{{file.consumer.path}}?moveFailed=.error"/>
+    <log message="Consumed a file: ${headers[CamelFileName]}"/>
+    <to uri="direct:handleMessage"/>
+  </route>
+  <route id="messageHandlerRoute">
+    <from uri="direct:handleMessage"/>
+    <log message="Storing message..."/>
+    <bean ref="messageStore" method="store(${body})"/>
+    <log message="Sending claim check...@FRED@"/>
+    <removeHeaders pattern="*"/>
+    <to uri="jms:queue:{{jms.producer.queueName}}?disableReplyTo=true"/>
+  </route>
+</camelContext>
 
 </blueprint>

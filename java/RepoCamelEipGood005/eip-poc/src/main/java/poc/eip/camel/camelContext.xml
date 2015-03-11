@@ -5,7 +5,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring-2.10.0.xsd">
 
-  <camel:camelContext/>
+  <camelContext xmlns="http://camel.apache.org/schema/spring"/>
 
   <bean id="streamComponent" class="org.apache.camel.component.stream.StreamComponent"/>
   <bean id="jms" class="org.apache.activemq.camel.component.ActiveMQComponent">
