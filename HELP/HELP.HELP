@@ -346,8 +346,10 @@ find . -type d -iname "target"|xargs rm -rf
 
 
 **************************************************************************
-@newmsg
+@git @config @global local system howto set git configuration in cmd line
 **************************************************************************
+git config --global core.autocrlf "true"
+git config --global --list
  
 
 
