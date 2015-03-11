@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import com.zenika.camel.notifier.model.Notifications;
 import com.zenika.camel.notifier.model.ObjectFactory;
 import com.zenika.camel.notifier.model.User;
+//******
 
 @Component("aggregator")
 public class Aggregator implements AggregationStrategy {
